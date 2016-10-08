@@ -1,1 +1,402 @@
 /* Styles for the Advanced Markup assignment. */
+/* body */
+body {
+  height: 100%;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background-color: #f2f2f2;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background-color: #222;
+  padding-top: 2px;
+  padding-left: 29px;
+}
+h1 {
+  padding-left: 20px;
+  font-family: 'Merriweather', serif;
+  font-size: 3.5em;
+  color: #f2f2f2;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: 'Merriweather', serif;
+}
+
+.top-nav li a {
+  color: #f2f2f2;
+}
+/* top nav */
+.top-nav, .bottom-nav  {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.top-nav li, .bottom-nav li{
+  float: left;
+}
+
+.top-nav li a, .bottom-nav li a{
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 1em;
+}
+
+.top-nav li a:hover, .bottom-nav li a:hover{
+  color: #ffff00;
+  -o-transition:.5s; /* trasition for color change */
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+.bottom-nav {
+  clear: both;
+}
+
+.top-nav li a {
+  padding: 8px 16px;
+}
+
+.top-nav li a.active, .bottom-nav li a.active {
+    background-color: #ffff00;
+    color: #222;
+}
+
+.top-nav li a:hover:not(.active), .bottom-nav li a:hover:not(.active) {
+    background-color: #f2f2f2;;
+    color: #222;
+}
+
+footer {
+  background-color: #222;
+  padding-bottom: 2px;
+  padding-left: 29px;
+}
+
+footer p {
+  color: #f2f2f2;
+  font-size: .75em;
+  text-align: center;
+}
+
+
+/* sidebar */
+#sidebar {
+  float: right;
+  position: fixed;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  width: 20%;
+  max-height: 90%;
+  padding: 25px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  background-color: #ffff00;
+  line-height: 2.3;
+  font-size: .75em;
+}
+
+#sidebar h2 {
+  font-size: 1.5em;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: #222;
+}
+
+#sidebar a:hover {
+  background-color: #222;
+  color: #ffff00;
+}
+
+.share, .share a{
+  list-style: none;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #222;
+}
+
+.share li {
+  float: left;
+  padding-right: 10px;
+}
+
+/* content */
+#content {
+  width: 60%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: 80px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  line-height: 2.3;
+  font-size: 1em;
+}
+
+#content a {
+  text-decoration: none;
+  color: #222;
+}
+
+#content a:hover {
+  background-color: #ffff00;
+}
+
+.smalltext {
+  font-size: .75em;
+}
+
+.smalltext a {
+  text-decoration: none;
+  color: #222;
+  background-color: #ffff00;
+}
+
+/* home */
+.poem {
+  list-style: none;
+  list-style-position: inside;
+  margin: 0;
+  font-size: 1.5em;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  line-height: 2;
+  font-family: 'Josefin Slab', serif;
+}
+
+/*first letter of poem, enlarge the letter */
+.poem li:nth-child(1):first-letter {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+
+/* about-poe */
+.bio-photo {
+  float:left;
+  font-size: .75em;
+  max-width: 256px;
+  padding-right: 10px;
+  margin-bottom: -10px;
+}
+
+#content img {
+  margin-top: 3px;
+  border: 1px solid #222;
+}
+
+#content h2 {
+  text-align: center;
+}
+table {
+  width: 100%;
+}
+
+#content th {
+  text-align: left;
+}
+
+#content td {
+  vertical-align: middle;
+}
+/*interpretation */
+.bibliography, .bibliography a {
+  list-style: none;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: .75em;
+  text-align: center;
+}
+
+/* sidebar definition list */
+dl.margins-removed {
+  margin: 0;
+  padding: 0;
+}
+
+.margins-removed dt {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.margins-removed dd {
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+
+/* popup boxes for side bar */
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .top-nav li a, .bottom-nav li a {
+    font-size: .75em;
+  }
+  .poem {
+    font-size: 1.3em;
+  }
+  #content {
+    font-size: .9em;
+  }
+  #sidebar {
+    font-size: .6em;
+  }
+
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  .top-nav li a, .bottom-nav li a {
+    font-size: .6em;
+  }
+  .poem {
+    font-size: 1.2em;
+  }
+
+  #content {
+    margin-left: 50px;
+    font-size: .8em;
+  }
+
+  #sidebar {
+    font-size: .5em;
+  }
+
+}
+
+/********** Extra-Small devices only **********/
+@media (max-width: 615px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  #sidebar {
+      max-width: 15%;
+  }
+}
+
+/********** Extra-Extra-Small devices only **********/
+@media (max-width: 500px) {
+    h1 {
+      font-size: 1.5em;
+    }
+    #sidebar {
+      max-width: 15%;
+    }
+}
+
